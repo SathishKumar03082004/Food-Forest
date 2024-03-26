@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4; /* Similar background color to the one in the Zomato link */
+    }
+    
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .card p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #ed1c24;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #c9141e;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Discover Great Places to Eat</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Order Food</h3>
+      <p>Find restaurants nearby and order your favorite dishes for delivery or pickup.</p>
+      <a href="#">Order Now</a>
+    </div>
+    <div class="card">
+      <h3>Track Orders</h3>
+      <p>Keep track of your food orders and get real-time updates on their status.</p>
+      <a href="#">Track Orders</a>
+    </div>
+    <div class="card">
+      <h3>Explore Restaurants</h3>
+      <p>Discover new dining spots, browse menus, and read reviews from other food lovers.</p>
+      <a href="#">Explore Now</a>
+    </div>
+    <div class="card">
+      <h3>Manage Account</h3>
+      <p>Update your profile details, manage your addresses, and view your order history.</p>
+      <a href="#">Manage Account</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
