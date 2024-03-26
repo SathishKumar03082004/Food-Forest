@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel List</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    
+    .container {
+      width: 80%;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    .hotel {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+    }
+    
+    .hotel img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+    
+    .hotel-info {
+      display: flex;
+      align-items: center;
+    }
+    
+    .hotel-info h3 {
+      margin: 0;
+    }
+    
+    .hotel-info p {
+      margin: 5px 0;
+    }
+
+    .order-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .order-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Hotel List</h2>
+
+  <div class="hotel">
+    <div class="hotel-info">
+      <img src="hotel1.jpg" alt="Hotel">
+      <div>
+        <h3>Hotel ABC</h3>
+        <p>Address: 123 Main Street, City</p>
+        <p>Rating: 4.5/5</p>
+        <p>Delivery Time: 30 minutes</p>
+        <p>Cuisine: Continental, Italian</p>
+        <button class="order-button">Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel">
+    <div class="hotel-info">
+      <img src="hotel2.jpg" alt="Hotel">
+      <div>
+        <h3>Hotel XYZ</h3>
+        <p>Address: 456 Park Avenue, Town</p>
+        <p>Rating: 4.2/5</p>
+        <p>Delivery Time: 25 minutes</p>
+        <p>Cuisine: Asian, Indian</p>
+        <button class="order-button">Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel">
+    <div class="hotel-info">
+      <img src="hotel3.jpg" alt="Hotel">
+      <div>
+        <h3>Hotel PQR</h3>
+        <p>Address: 789 Oak Road, Village</p>
+        <p>Rating: 4.7/5</p>
+        <p>Delivery Time: 35 minutes</p>
+        <p>Cuisine: Mexican, American</p>
+        <button class="order-button">Order Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
