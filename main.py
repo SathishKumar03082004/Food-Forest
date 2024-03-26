@@ -22,3 +22,8 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+@app.get('/test')
+def get_home(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("test.html", {"request": request})
