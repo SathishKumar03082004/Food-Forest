@@ -4,177 +4,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FDS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #ed1c24;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      margin-right: auto;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .last {
+      margin-left: 100px;
+    }
+
+    .hero {
+      /* background-image: url('hero-bg.jpg'); */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center; /* Centering the content vertically */
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      background-color: #ed1c24;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #c9141e;
+    }
+
+    .featured-restaurants {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+    }
+
+    .featured-restaurants .restaurant-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .featured-restaurants .restaurant-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .featured-restaurants .restaurant-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .featured-restaurants .restaurant-card p {
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-header {
-  background-color: #ed1c24;
-  color: white;
-  padding: 10px 0;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  margin-right: auto;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-}
-
-.last{
-    margin-left: 100px;
-}
-
-
-.hero {
-  background-image: url('hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 0;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-}
-
-button[type="submit"] {
-  background-color: #ed1c24;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #c9141e;
-}
-
-
-.featured {
-  padding: 50px 0;
-}
-
-.featured h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-.login-signup {
-    display: flex;
-    align-items: center;
-}
-
-.login-signup a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-
-.featured-restaurants {
-  padding: 50px 0;
-  background-color: #f8f8f8;
-}
-
-.featured-restaurants .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.featured-restaurants h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.featured-restaurants .restaurant-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.featured-restaurants .restaurant-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.featured-restaurants .restaurant-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.featured-restaurants .restaurant-card p {
-  margin-bottom: 5px;
-  color: #666;
-}
-
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-</style>
 <header>
   <nav>
     <div class="container">
@@ -191,7 +154,8 @@ footer {
 <main>
   <section class="hero">
     <div class="container">
-      <h1>Find the best restaurants, cafes, and bars in India</h1>
+      <h1>Find the best restaurants, cafes, and bars in India
+      </h1>
       <form action="#">
         <input type="text" placeholder="Search for restaurants...">
         <button type="submit">Search</button>
