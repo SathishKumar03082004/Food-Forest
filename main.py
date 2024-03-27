@@ -29,6 +29,15 @@ def get_home(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("home.html", {"request": request})
 
 
+@app.get('/login')
+def get_home(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("login.html", {"request": request})
+
+
+@app.get('/signup')
+def get_home(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("signup.html", {"request": request})
+
 
 
 @app.get('/dashboard')
