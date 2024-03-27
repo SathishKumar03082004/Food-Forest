@@ -60,17 +60,17 @@
     }
 
     .hero {
-      /* background-image: url('hero-bg.jpg'); */
       background-size: cover;
       background-position: center;
       color: white;
       padding: 100px 0;
-      text-align: center; /* Centering the content vertically */
+      text-align: center; 
     }
 
     .hero h1 {
       font-size: 48px;
       margin-bottom: 20px;
+      color: #c9141e;
     }
 
     form {
@@ -128,6 +128,27 @@
       color: #666;
     }
 
+
+.login-signup .button {
+  background-color: #ed1c24;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* added */
+  transition: background-color 0.3s; /* added */
+}
+
+.login-signup .button.last {
+  margin-left: 20px; /* adjusted */
+}
+
+.login-signup .button:hover {
+  background-color: #c9141e;
+}
+
+
     footer {
       background-color: #333;
       color: white;
@@ -145,17 +166,16 @@
     </div>
 
     <div class="login-signup">
-        <a href="/login">Login</a>
-        <a href="/signup" class="last">Signup</a>
-      </div>
+      <a href="/login" class="button">Login</a>
+      <a href="/signup" class="button last">Signup</a>
+    </div>
   </nav>
 </header>
 
 <main>
   <section class="hero">
     <div class="container">
-      <h1>Find the best restaurants, cafes, and bars in India
-      </h1>
+      <h1>Find the best restaurants, cafes, and bars in India</h1>
       <form action="#">
         <input type="text" placeholder="Search for restaurants...">
         <button type="submit">Search</button>
@@ -179,7 +199,7 @@
         <p>Rating: 4.2/5</p>
       </div>
       <div class="restaurant-card">
-        <img src="restaurant2.jpg" alt="Restaurant 2">
+        <img src="restaurant3.jpg" alt="Restaurant 2">
         <h3>Restaurant Name 3</h3>
         <p>Address: 789 Street, Bangalore</p>
         <p>Rating: 3.5/5</p>
