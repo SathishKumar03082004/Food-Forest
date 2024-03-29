@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Restaurants</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .restaurant-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* Add position relative for absolute positioning */
+  }
+
+  .restaurant-card:last-child {
+    margin-right: 0;
+  }
+
+  .restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .restaurant-card img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .restaurant-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .restaurant-card p {
+    margin-bottom: 5px;
+    color: #666;
+  }
+
+  .view-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ed1c24;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration-color: #ed1c24;
+  }
+
+  .view-button:hover {
+    background-color: #c9141e;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="restaurant-card">
+      <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 1">
+      <h3>Restaurant Name 1</h3>
+      <p>Address: 123 Street, Bangalore</p>
+      <p>Rating: 4.5/5</p><br><br>
+      <a href="#" class="view-button">View</a>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 1">
+      <h3>Restaurant Name 2</h3>
+      <p>Address: 456 Street, Bangalore</p>
+      <p>Rating: 3.5/5</p><br><br>
+      <a href="#" class="view-button">View</a>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 1">
+      <h3>Restaurant Name 3</h3>
+      <p>Address: 789 Street, Bangalore</p>
+      <p>Rating: 4.0/5</p><br><br>
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="restaurant-card">
+      <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 1">
+      <h3>Restaurant Name 3</h3>
+      <p>Address: 789 Street, Bangalore</p>
+      <p>Rating: 4.0/5</p><br><br>
+      <a href="#" class="view-button">View</a>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 1">
+      <h3>Restaurant Name 3</h3>
+      <p>Address: 789 Street, Bangalore</p>
+      <p>Rating: 4.0/5</p><br><br>
+      <a href="#" class="view-button">View</a>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 1">
+      <h3>Restaurant Name 3</h3>
+      <p>Address: 789 Street, Bangalore</p>
+      <p>Rating: 4.0/5</p><br><br>
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
