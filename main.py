@@ -24,6 +24,12 @@ def get_db():
         db.close()
 
 
+@app.get('/test')
+def get_home(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("test.html", {"request": request})
+
+
+
 @app.get('/home')
 def get_home(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("home.html", {"request": request})
