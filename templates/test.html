@@ -114,6 +114,44 @@
     right: 10px;
     cursor: pointer;
   }
+
+
+
+  .button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    animation: glowing 1.5s ease infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-color: #45a049; 
+      box-shadow: 0 0 10px #45a049; 
+    }
+    50% {
+      background-color: #4CAF50; 
+      box-shadow: 0 0 20px #4CAF50; 
+    }
+    100% {
+      background-color: #45a049;
+      box-shadow: 0 0 10px #45a049;
+    }
+  }
+
+
 </style>
 </head>
 <body>
@@ -171,6 +209,10 @@
       </div>
   </div>
 </div>
+
+<center>
+    <a href="/dashboard" class="button">Menu</a>
+</center>
 
 <div id="popup" class="popup">
     <div class="popup-content">

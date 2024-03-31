@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Button with Hover Effect</title>
+<title>Button with Glowing Hover Effect</title>
 <style>
   .button {
     background-color: #4CAF50; /* Green */
@@ -15,13 +15,28 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 8px;
+    overflow: hidden;
   }
   
   .button:hover {
-    background-color: #45a049; /* Darker Green */
+    animation: glowing 1.5s ease infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-color: #45a049; /* Darker Green */
+      box-shadow: 0 0 10px #45a049; /* Darker Green */
+    }
+    50% {
+      background-color: #4CAF50; /* Green */
+      box-shadow: 0 0 20px #4CAF50; /* Green */
+    }
+    100% {
+      background-color: #45a049; /* Darker Green */
+      box-shadow: 0 0 10px #45a049; /* Darker Green */
+    }
   }
 </style>
 </head>
