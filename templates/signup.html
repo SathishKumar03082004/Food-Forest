@@ -70,18 +70,18 @@
 
 <div class="container">
   <h2>Sign Up</h2>
-  <form action="#" onsubmit="return validateForm()">
+  <form action="/newuser">
     <label for="fullname">Full Name</label>
     <input type="text" id="fullname" name="fullname" required>
+
+    <label for="fullname">User Name</label>
+    <input type="text" id="username" name="username" required>
 
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
 
     <label for="password">Password</label>
     <input type="password" id="password" name="password" required>
-
-    <label for="confirm-password">Confirm Password</label>
-    <input type="password" id="confirm-password" name="confirm-password" required>
 
     <button type="submit">Sign Up</button>
   </form>
@@ -91,16 +91,34 @@
 </div>
 
 <script>
-  function validateForm() {
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirm-password").value;
+  function login(){
+    let formData= new FormData();
+    formData.append("login_user",$("#login-user").val());
+    formData.append("login_password",$("#login-password").val());
+   
+    
+    $.ajax({
+        type: 'POST',
+        url: '/logcheck',
+        data: formData,
+        contentType: false, 
+        processData: false, 
+        dataType: 'json',
 
-    if (password !== confirmPassword) {
-      alert("Password and Confirm Password do not match!");
-      return false;
-    }
-    return true;
-  }
+    }).done(function(msg){
+        if(msg=="Invalid Creditional"){
+            alert("^"); 
+            $("#err").text(msg);
+            
+        }
+        else{
+            window.location.href="/dashboard";
+        }
+
+    });
+
+}
+    </script>
 </script>
 
 </body>

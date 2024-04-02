@@ -80,8 +80,8 @@
       <h3>Delicious Burger</h3>
       <p>Description: A juicy burger with all the fixings.</p>
       <p>Price: &#x20b9;5.99</p>
-      <button class="btn-add-to-cart">Add to Cart</button>
-      <button class="btn-add-to-cart">Go To Cart</button>
+      <button class="btn-add-to-cart" onclick="showAlert()">Add to Cart</button>
+      <a href="/cart" class="btn-add-to-cart">Go To Cart</a>
     </div>
   </div>
 
@@ -91,8 +91,8 @@
       <h3>Crunchy Fries</h3>
       <p>Description: Crispy golden fries served hot.</p>
       <p>Price: &#x20b9;2.99</p>
-      <button class="btn-add-to-cart">Add to Cart</button>
-      <button class="btn-add-to-cart">Go To Cart</button>
+      <button class="btn-add-to-cart" onclick="showAlert()">Add to Cart</button>
+      <a href="/cart" class="btn-add-to-cart">Go To Cart</a>
     </div>
   </div>
 
@@ -102,11 +102,17 @@
       <h3>Refreshing Drink</h3>
       <p>Description: A cool, refreshing beverage.</p>
       <p>Price: &#x20b9;1.99</p>
-      <button class="btn-add-to-cart">Add to Cart</button>
-      <button class="btn-add-to-cart">Go To Cart</button>
+      <button class="btn-add-to-cart" onclick="showAlert()">Add to Cart</button>
+      <a href="/cart" class="btn-add-to-cart">Go To Cart</a>
     </div>
   </div>
 </div>
+
+<script>
+  function showAlert() {
+    alert("Added Successfully!");
+  }
+</script>
 
 </body>
 </html>
