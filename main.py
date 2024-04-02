@@ -56,26 +56,6 @@ def logcheck(request:Request,db:Session=Depends(get_db),login_user:str=Form(...)
 
 
 
-# @app.get('/signup')
-# def get_signup(request: Request, db: Session = Depends(get_db)):
-#     return templates.TemplateResponse("signup.html", {"request": request})
-
-
-# @app.post('/newuser')
-# def create(request:Request,db:Session = Depends(get_db),name:str=Form(...),fullname:str=Form(...),username:str=Form(...),email:str=Form(...),password:str=Form(...)):
-#     status1="Active"
-#     find=db.query(models.SignUp).filter(models.SignUp.username==username).first()
-#     if find is None:
-#         body=models.SignUp(name=name,username=username,email=email,password=password,status=status1)
-#         db.add(body)
-#         db.commit()
-#         error="Done"
-#         return RedirectResponse("/dashboard")
-#         #return get_dashboard(request, db=db)
-#     else:
-#         error="Already Exists"
-
-
 @app.get('/dashboard')
 def get_dashboard(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("dashboard.html", {"request": request})
