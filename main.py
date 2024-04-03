@@ -19,8 +19,11 @@ from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
-
 @app.get('/', response_class=HTMLResponse)
+async def get_order(request: Request):
+    return templates.TemplateResponse("home.html", {"request": request})
+
+@app.get('/login', response_class=HTMLResponse)
 async def get_order(request: Request):
     return templates.TemplateResponse("login.html", {"request": request})
 
