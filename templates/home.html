@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Forest</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #ed1c24;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      margin-right: auto;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .last {
+      margin-left: 100px;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center; 
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #c9141e;
+    }
+
+    form {
+      display: flex;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      background-color: #ed1c24;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #c9141e;
+    }
+
+    .featured-restaurants {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+    }
+
+    .featured-restaurants .restaurant-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .featured-restaurants .restaurant-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .featured-restaurants .restaurant-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .featured-restaurants .restaurant-card p {
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+
+.login-signup .button {
+  background-color: #ed1c24;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* added */
+  transition: background-color 0.3s; /* added */
+}
+
+.login-signup .button.last {
+  margin-left: 20px; /* adjusted */
+}
+
+.login-signup .button:hover {
+  background-color: #c9141e;
+}
+
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">Food Forest</a><br>
+    </div>
+
+    <div class="login-signup">
+      <a href="/login" class="button last">Login</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Find the best restaurants, cafes, and bars in India</h1>
+      <form action="#">
+        <input type="text" placeholder="Search for restaurants...">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="featured-restaurants">
+    <div class="container">
+      <h2>Featured Restaurants</h2>
+      <div class="restaurant-card">
+        <img src="https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 1">
+        <h3>Restaurant Name 1</h3>
+        <p>Address: 123 Street, Bangalore</p>
+        <p>Rating: 4.5/5</p>
+      </div>
+      <div class="restaurant-card">
+        <img src="https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 2">
+        <h3>Restaurant Name 2</h3>
+        <p>Address: 456 Street, Bangalore</p>
+        <p>Rating: 4.2/5</p>
+      </div>
+      <div class="restaurant-card">
+        <img src="https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant 2">
+        <h3>Restaurant Name 3</h3>
+        <p>Address: 789 Street, Bangalore</p>
+        <p>Rating: 3.5/5</p>
+      </div>
+    </div>
+  </section>
+  
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 App. All rights reserved.</p>
+    <p>Developed By <a href="https://sathish3.godaddysites.com">Sathish Kumar G & Arun A & Mithun</a></p>
+  </div>
+</footer>
+
+
+</body>
+</html>
